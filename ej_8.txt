@@ -1,0 +1,19 @@
+﻿#include <stdio.h>
+
+
+int convert(int dias) {
+	return dias * 24; 
+}
+
+int main() {
+	int cantdia;
+	
+	printf("Ingrese la cantidad de días: ");
+	scanf("%d", &cantdia);
+	
+	int canths = convert(cantdia);
+	
+	printf("%d días equivale a %d horas.\n", cantdia, canths);
+	
+	return 0;
+}

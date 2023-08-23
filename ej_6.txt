@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int deter(int numero, int *valabs) {
+	if (numero >= 0) {
+		*valabs = numero;
+		return 0; 
+	} else {
+		*valabs = abs(numero);
+		return 1; 
+	}
+}
+
+int main() {
+	int num, valabs, resultado;
+	
+	printf("Ingrese un número entero: ");
+	scanf("%d", &num);
+	
+	resultado = deter(num, &valabs);
+	
+	if (resultado == 0) {
+		printf("El número es positivo y su valor absoluto es: %d\n", valabs);
+	} else {
+		printf("El número es negativo y su valor absoluto es: %d\n", valabs);
+	}
+	
+	return 0;
+}

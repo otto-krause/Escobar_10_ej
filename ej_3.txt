@@ -1,0 +1,20 @@
+#include <stdio.h>45
+
+int simbol(int num) {
+	if (num >= 0 && num <= 127) {
+		printf("El símbolo correspondiente al número %d es: %c\n", num, (char)num);
+	} else {
+		printf("El número ingresado no está dentro del rango ASCII (0-127).\n");
+	}
+}
+
+int main() {
+	int num;
+	
+	printf("Ingrese un número entero: ");
+	scanf("%d", &num);
+	
+	simbol(num);
+	
+	return 0;
+}

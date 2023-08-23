@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+void fullname (){
+	char name [17] ,name2 [17] ;
+	printf("Ingrese un su nombre :");
+	scanf("%s" ,&name);
+	printf("Ingrese su apellido :");
+	scanf("%s",&name2);
+		printf("Su nombre completo es %s %s", name, name2);
+}
+
+int main (){
+	fullname();
+	return 0;
+}

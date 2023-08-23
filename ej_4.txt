@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int calcumedia(int n1, int n2) {
+	int media;
+	media = (n1 + n2) / 2;
+	return media; 
+}
+
+int main() {
+	int num1, num2;
+	
+	printf("Ingrese el primer número: ");
+	scanf("%d", &num1);
+	
+	printf("Ingrese el segundo número: ");
+	scanf("%d", &num2);
+	
+	int media = calcumedia(num1, num2);
+	printf("La media de %d y %d es: %d\n", num1, num2, media);
+	
+	return 0;
+}
